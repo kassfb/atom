@@ -15,7 +15,7 @@ public class Util {
     }
 
     public static String getHelloWorld() {
-        return "Hello, World!";
+        return "Hello, WRLD!";
     }
 
     /**
