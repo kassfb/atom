@@ -3,9 +3,8 @@ package ru.atom.geometry;
 /**
  * Template class for
  */
+
 public class Point implements Collider /* super class and interfaces here if necessary */ {
-    // fields
-    // and methods
     private int x;
     private int y;
 
