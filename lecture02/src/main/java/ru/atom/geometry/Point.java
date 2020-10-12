@@ -28,6 +28,7 @@ public class Point implements Collider /* super class and interfaces here if nec
         this.x = x;
         this.y = y;
     }
+
     /**
      * @param o - other object to check equality with
      * @return true if two points are equal and not null.

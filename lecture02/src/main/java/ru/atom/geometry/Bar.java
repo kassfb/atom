@@ -1,6 +1,6 @@
 package ru.atom.geometry;
 
-public class Bar implements  Collider {
+public class Bar implements Collider {
     private final Point point1;
     private final Point point2;
 
@@ -36,10 +36,10 @@ public class Bar implements  Collider {
         if (o instanceof Bar) {
             Bar otherBar = (Bar) o;
 
-            if (checkPoint(otherBar.point1,this)
-                    || checkPoint(otherBar.point2,this)
-                    || checkPoint(new Point(otherBar.point2.getX(),otherBar.point1.getY()),this)
-                    || checkPoint(new Point(otherBar.point1.getX(),otherBar.point2.getY()),this))
+            if (checkPoint(otherBar.point1, this)
+                    || checkPoint(otherBar.point2, this)
+                    || checkPoint(new Point(otherBar.point2.getX(), otherBar.point1.getY()), this)
+                    || checkPoint(new Point(otherBar.point1.getX(), otherBar.point2.getY()), this))
                 return true;
             else return otherBar.point2.getX() <= this.point2.getX()
                     && otherBar.point1.getX() >= this.point1.getX()
@@ -49,7 +49,7 @@ public class Bar implements  Collider {
                     && otherBar.point1.getY() >= this.point1.getY()
                     && otherBar.point2.getX() >= this.point2.getX()
                     && otherBar.point1.getX() <= this.point1.getX();
-        } else if (o instanceof  Point) {
+        } else if (o instanceof Point) {
             Point otherPoint = (Point) o;
             return checkPoint(otherPoint, this);
         }
