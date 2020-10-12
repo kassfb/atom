@@ -25,10 +25,10 @@ public class Util {
      * @return the largest of values.
      */
     public static int max(int[] values) {
-        int arrlenght=values.length;
-        int max=values[0];
-        for (int i=0; i<arrlenght; i++){
-            if(max<values[i]) max=values[i];
+        int arrlenght = values.length;
+        int max = values[0];
+        for (int i = 0; i < arrlenght; i++) {
+            if (max < values[i]) max = values[i];
         }
         return max;
         //throw new UnsupportedOperationException();
@@ -41,10 +41,10 @@ public class Util {
      * @return the sum of all values.
      */
     public static long sum(int[] values) {
-        int arrlenght=values.length;
-        long sum=0;
-        for (int i=0; i<arrlenght; i++)
-            sum+=values[i];
+        int arrlenght = values.length;
+        long sum = 0;
+        for (int i = 0; i < arrlenght; i++)
+            sum += values[i];
         return sum;
         //throw new UnsupportedOperationException();
     }
