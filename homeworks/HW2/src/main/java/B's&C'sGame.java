@@ -66,7 +66,7 @@ public class Game {
                 System.out.println("Incorrect word length. Try again.");
                 continue;
             }
-            if (guess.equals(word)) {
+            if (StrTry.equals(word)) {
                 System.out.println("You won!");
                 return;
             }
