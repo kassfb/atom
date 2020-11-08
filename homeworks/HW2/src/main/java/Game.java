@@ -1,4 +1,5 @@
 import org.slf4j.LoggerFactory;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -62,14 +63,9 @@ public class Game {
             System.out.println("Cows: " + compute(strTry)[0]);
             System.out.println("Bulls: " + compute(strTry)[1]);
             losses++;
+            System.out.println("Guesses left: " + (10 - losses));
         }
-
-        List<String> ifLoose = Arrays.asList(
-                "You lose",
-                "I'm sorry, but you lost.",
-                "Nice try, but you failed."
-        );
-        System.out.println(ifLoose.get(new Random().nextInt(ifLoose.size())));
+        System.out.println("You lose");
         log.info("Secret word not guessed!");
     }
 }
