@@ -14,8 +14,8 @@ repositories {
 
 checkstyle {
     ignoreFailures = false
-    toolVersion = '7.5'
-    configFile = rootProject.file('../../config/checkstyle/checkstyle.xml')
+    toolVersion = '7.6.1'
+    configFile = new File('../../config/checkstyle/checkstyle.xml')
 }
 
 dependencies {
