@@ -15,7 +15,7 @@ public class Game {
         this.dictionary = words;
     }
 
-    private String secretWord() {
+    public String secretWord() {
         return dictionary.get(random.nextInt(dictionary.size()));
     }
 

@@ -1,6 +1,10 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Random;
+
 public class BullsCowsTest {
 
     @Test
@@ -43,6 +47,14 @@ public class BullsCowsTest {
         int[] result = game.compute("banana");
         Assert.assertEquals(0, result[0]);
         Assert.assertEquals(0, result[1]);
+    }
+
+    @Test
+    public void loadDictionaryNullCheck() throws IOException {
+        List<String> words = BullsCows.getDictionary("dictionary.txt");
+        Game game = new Game(words);
+        String rndWord = game.secretWord();
+        Assert.assertNotNull(rndWord);
     }
 
 }
